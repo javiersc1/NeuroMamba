@@ -1,0 +1,6 @@
+*.pt
+*.pth
+*.npy
+*.pyc
+*.txt
+madc_complete.csv

@@ -1,0 +1,159 @@
+from pathlib import Path
+import numpy as np
+import torch
+import os
+import pandas as pd
+from NeuroMamba.utils.dataloaders import get_files, RSFMRI_DATALOADER, get_dataframe_entry
+from NeuroMamba.utils.fmri import madc_import, score_import, mapScores, mapClasses
+from torch.utils.data import Dataset, DataLoader
+from scipy import stats
+import time
+from sklearn.model_selection import LeaveOneOut
+from NeuroMamba.models.NeuroMamba import NeuroMamba
+from tqdm import tqdm
+from NeuroMamba.utils.adni import ADNI_LOADER, adni_import, adni_collate
+import glob
+
+def train(model, trainloader, valloader, optimizer, scheduler, epochs=100, fold=0):
+    best_val = 100000
+    for epoch in range(epochs):
+        running_loss = 0.
+        model.train()
+        for idx, (data,info) in enumerate(trainloader):
+            data, info = adni_collate(data, info, file_mode=file_mode)
+            scores = mapScores(info, num=score_amount, mode=score_mode).to("cuda", dtype=torch.float32).unsqueeze(1)
+            inputs = data.to("cuda", dtype=torch.float32)
+            optimizer.zero_grad()
+            predictedScores, latents = model(inputs)
+            loss = criterion(predictedScores, latents, scores)
+            loss.backward()
+            torch.nn.utils.clip_grad_value_(model.parameters(), 1.0)
+            optimizer.step()
+            running_loss += loss.item()
+
+        
+        train_loss = running_loss / len(trainloader.dataset)
+        if scheduler is not None:
+            scheduler.step()
+
+        # running_loss = 0.
+        # totalScores = []
+        # totalPredictedScores = []
+        # model.eval()
+        # for idx, (data,info) in enumerate(valloader):
+        #     data, info = adni_collate(data, info, file_mode=file_mode)
+        #     scores = mapScores(info, num=score_amount, mode=score_mode).to("cuda", dtype=torch.float32)
+        #     inputs = data.to("cuda", dtype=torch.float32)
+        #     with torch.no_grad():
+        #         predictedScores, latents = model(inputs.squeeze(0))
+        #         predictedScores = predictedScores.squeeze(-1).unsqueeze(0)
+        #         loss = criterion(predictedScores, latents, scores)
+        #         totalScores.append(scores.cpu().numpy())
+        #         totalPredictedScores.append(predictedScores.cpu().numpy())
+        #         running_loss += loss.item()
+        # val_loss = running_loss / len(valloader.dataset)
+        # print("Epoch ", epoch, " Train Loss: ", train_loss, " Val Loss: ", val_loss)
+
+        if epoch in [9, 24, 49, 74, epochs-1]:
+            torch.save(model.state_dict(), os.path.join(f'/home/javier/weights/adni/neuromamba/{fold}_{epoch+1}.pth'))
+    
+    return None
+
+def evaluate(testloader, fold):
+    model = NeuroMamba(n_layers=n_layers, state_dim=state_dim, num_variables=272, score_amount=score_amount).to("cuda")
+    model.load_state_dict(torch.load(os.path.join(f'/home/javier/weights/adni/neuromamba/{fold}_{epochs}.pth')))
+    model.eval()
+    realScores = 0.
+    predictedScores = 0.
+
+    for idx, (data,info) in enumerate(testloader):
+        data, info = adni_collate(data, info, file_mode="all")
+        realScores = mapScores(info, num=score_amount, mode=score_mode).to("cuda", dtype=torch.float32).unsqueeze(1)
+        inputs = data.to("cuda", dtype=torch.float32)
+        with torch.no_grad():
+            predictedScores, _ = model(inputs)
+    
+    realScores = realScores.cpu().numpy().flatten()
+    predictedScores = predictedScores.cpu().numpy().flatten()
+
+    return realScores, predictedScores
+
+def criterion(predictedScores, latents, scores):
+    fidelity = torch.nn.functional.mse_loss(predictedScores, scores)
+    reg = torch.linalg.vector_norm(latents, ord=1, dim=-1).mean()
+    return fidelity + lam * reg
+
+def leaveoneout(files):
+    loo = LeaveOneOut()
+    predictedScores = []
+    trueScores = []
+    trial = 1
+    line = 2
+
+    for train_index, test_index in tqdm(loo.split(files), total=loo.get_n_splits(files), desc="LOO CV"):
+        train_files = files[train_index]
+        test_file = files[test_index]
+        # create datasets
+        train_dataset = ADNI_LOADER(train_files, transforms=None, database=df, file_mode=file_mode)
+        test_dataset = ADNI_LOADER(test_file, transforms=None, database=df, file_mode="all")
+        # create dataloaders
+        train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, drop_last=True, num_workers=workers)
+        test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, drop_last=False, num_workers=workers)
+        # initialize model
+        torch.manual_seed(42)
+        model = NeuroMamba(n_layers=n_layers, state_dim=state_dim, num_variables=272, score_amount=score_amount).to("cuda")
+        # train model
+        optimizer = torch.optim.Adam(model.parameters(), lr=lr, betas=(0.0, 0.95))
+        #scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
+        scheduler = None
+        train(model, train_loader, test_loader, optimizer, scheduler, epochs=epochs, fold=trial)
+        # evaluate model
+        real, pred = evaluate(test_loader, fold=trial)
+
+        # for i in range(len(real)): # print to terminal
+        #     print(f"Line: {line},Real: {real[i]}, Pred: {pred[i]}")
+        #     line += 1  
+         
+        trueScores.append(real)
+        predictedScores.append(pred)
+
+        trial += 1
+
+    trueScores = np.concatenate(trueScores).squeeze()
+    predictedScores = np.concatenate(predictedScores).squeeze()
+
+    return trueScores, predictedScores
+
+
+if __name__ == "__main__":
+    experiment_dir = "/home/javier/Desktop/DeepScore/experiments/adni/end2end/"
+    # params
+    workers = 8
+    df = adni_import()
+    score_amount = 1
+    score_mode = "mocaz"
+    file_mode="train"
+    # model params
+    n_layers = 12
+    state_dim = 32
+    lam = 0.01
+
+    lr = 1e-4
+    batch_size = 1
+    epochs = 100
+    batch_factor = batch_size / 1
+    lr = lr * np.sqrt(batch_factor)
+    # init folds
+    files = np.array(sorted(glob.glob('/home/javier/adni/subjects/*')))
+    # LOO evaluation
+    real, pred = leaveoneout(files)
+    # pearson correlation
+    pearson_corr = stats.pearsonr(real, pred)
+    pval = pearson_corr.pvalue
+    pearson = pearson_corr.statistic
+    print("Categories: [MoCA]")
+    print("Final Pearson: ", pearson)
+    print("P-values: ", pval)
+    # # save real and pred to csv
+    # results_df = pd.DataFrame({'Real_MoCA': real, 'Predicted_MoCA': pred})
+    # results_df.to_csv(os.path.join(experiment_dir, 'neuromamba.csv'), index=False)
