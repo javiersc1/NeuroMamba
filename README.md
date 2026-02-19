@@ -303,7 +303,12 @@ Analyses of fMRI data were performed using CONN<sup>\[1\]</sup> (RRID:SCR_009550
 Pending review at IEEE Transactions on Computational Biology and Bioinformatics.
 Arxiv citation below:
 ```
-TBD
+@article{cavazos2026behavior,
+  title={Behavior Score Prediction in Resting-State Functional MRI by Deep State Space Modeling},
+  author={Cavazos, Javier Salazar and Egan, Maximillian and Litinas, Krisanne and Hampstead, Benjamin and Peltier, Scott},
+  journal={arXiv preprint arXiv:2602.07131},
+  year={2026}
+}
 ```
 
 
