@@ -8,7 +8,6 @@ Early clinical assessment of Alzheimer’s disease relies on behavior scores tha
 -  [Directory Structure](#directory-structure)
 -  [Installation](#installation)
 -  [Fmriprep preprocessing](#Preprocessing-fmriprep)
--  [Conn toolbox preprocessing](#Preprocessing-CONNToolbox)
 -  [Paper Citation](#Citation)
 
 # Directory Structure
@@ -257,7 +256,7 @@ Tustison, N. J., B. B. Avants, P. A. Cook, Y. Zheng, A. Egan, P. A. Yushkevich, 
 Zhang, Y., M. Brady, and S. Smith. 2001. “Segmentation of Brain MR Images Through a Hidden Markov Random Field Model and the Expectation-Maximization Algorithm.” IEEE Transactions on Medical Imaging 20 (1): 45–57. https://doi.org/10.1109/42.906424.
 
 # Citation
-Pending review at IEEE Transactions on Computational Biology and Bioinformatics.
+Pending review at IEEE Journal of Biomedical and Health Informatics.
 Arxiv citation below:
 ```
 @article{cavazos2026behavior,
