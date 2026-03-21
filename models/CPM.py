@@ -1,3 +1,5 @@
+from tqdm import tqdm
+
 import torch
 import torch.nn as nn
 import math
@@ -32,6 +34,9 @@ def CPM(loader, score_amount=3, mode="mocaz", edge_type="positive", thresh=0.01)
         features, mask = cpm_method(FC, y, thresh=thresh, edge_type=edge_type)
         subjectFeatures.append(features)
         masks.append(mask)
+
+    subjectFeatures = np.concatenate(subjectFeatures, axis=1)
+    masks = np.stack(masks, axis=1)
 
     return subjectFeatures, Scores, masks
 
@@ -79,7 +84,7 @@ def cpm_method(X, y, thresh=0.01, edge_type="positive"):
     subjectFeatures = []
     # leave one out
     IDs = np.arange(X.shape[0])
-    for sub in IDs:
+    for sub in tqdm(IDs):
         train_index = np.where(IDs != sub)[0]
         test_index = np.where(IDs == sub)[0]
         trainFeatures, testFeatures = X[train_index], X[test_index]
@@ -95,15 +100,15 @@ def cpm_method(X, y, thresh=0.01, edge_type="positive"):
 if __name__ == "__main__":
     mode = "home"
     if mode == "home":
-        experiment_dir = "/home/javier/Desktop/DeepScore/experiments/leaveoneout/"
+        experiment_dir = "/home/javier/Desktop/NeuroMamba/experiments/leaveoneout/"
         path = "/home/javier/madc/"
-        madc_file = "/home/javier/Desktop/DeepScore/madc_complete.csv"
-        score_file = "/home/javier/Desktop/DeepScore/scores.csv"
+        madc_file = "/home/javier/Desktop/NeuroMamba/madc_complete.csv"
+        score_file = "/home/javier/Desktop/NeuroMamba/scores.csv"
     elif mode == "server":
-        experiment_dir = "/home/javiersc/DeepScore/experiments/leaveoneout/"
+        experiment_dir = "/home/javiersc/NeuroMamba/experiments/leaveoneout/"
         path = "/home/javiersc/madc/"
-        madc_file = "/home/javiersc/DeepScore/madc_complete.csv"
-        score_file = "/home/javiersc/DeepScore/scores.csv"
+        madc_file = "/home/javiersc/NeuroMamba/madc_complete.csv"
+        score_file = "/home/javiersc/NeuroMamba/scores.csv"
 
     workers = 8
     type = "rest"
@@ -112,11 +117,16 @@ if __name__ == "__main__":
     modescore = "mocaz"
     df = madc_import(filename=madc_file)
     score_db = score_import(filename=score_file)
-    files = np.array(get_files(path, df, type=type, subject_class=subject_class))
+    files = np.array(get_files(path, score_db, type=type, subject_class=subject_class))
 
     dataset = RSFMRI_DATALOADER(files, transforms=None, database=df, score_database=score_db)
     loader = DataLoader(dataset, batch_size=1, shuffle=True, drop_last=False, num_workers=workers)
 
-    subjectFeatures, Scores, masks = CPM(loader, score_amount=3, mode="mocaz", edge_type="positive", thresh=0.01)
+    subjectFeatures, Scores, masks = CPM(loader, score_amount=3, mode="mocaz", edge_type="negative", thresh=0.01)
     print(f"Feature matrix shape: {subjectFeatures.shape}")
     print(f"Score matrix shape: {Scores.shape}")
+
+    # save subjectFeatures, Scores, and masks for later use
+    np.save('/home/javier/weights/cpm-_subjectFeatures.npy', subjectFeatures)
+    np.save('/home/javier/weights/cpm-_Scores.npy', Scores)
+    np.save('/home/javier/weights/cpm-_masks.npy', masks)
