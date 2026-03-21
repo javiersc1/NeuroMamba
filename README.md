@@ -256,49 +256,6 @@ Tustison, N. J., B. B. Avants, P. A. Cook, Y. Zheng, A. Egan, P. A. Yushkevich, 
 
 Zhang, Y., M. Brady, and S. Smith. 2001. “Segmentation of Brain MR Images Through a Hidden Markov Random Field Model and the Expectation-Maximization Algorithm.” IEEE Transactions on Medical Imaging 20 (1): 45–57. https://doi.org/10.1109/42.906424.
 
-
-# Preprocessing-CONNToolbox
-
-## Methods (CONN Toolbox)
-
-Analyses of fMRI data were performed using CONN<sup>\[1\]</sup> (RRID:SCR_009550) release 22.v2407<sup>\[2\]</sup> and SPM<sup>\[3\]</sup> (RRID:SCR_007037) release 12.7771.
-
-**Preprocessing**: Functional and anatomical data were preprocessed using a modular preprocessing pipeline<sup>\[4\]</sup> including removal of initial scans, realignment, outlier detection, and smoothing. The first 12 scans in each functional run were removed. Functional data were coregistered to a reference image (first scan of the first session) using a least squares approach and a 6 parameter (rigid body) transformation without resampling<sup>\[5\]</sup>. Potential outlier scans were identified using ART<sup>\[6\]</sup> as acquisitions with framewise displacement above 0.5 mm or global BOLD signal changes above 3 standard deviations<sup>\[7,8\]</sup>, and a reference BOLD image was computed for each subject by averaging all scans excluding outliers. Last, functional data were smoothed using spatial convolution with a Gaussian kernel of 6 mm full width half maximum (FWHM).
-
-**Denoising**: In addition, functional data were denoised using a standard denoising pipeline<sup>\[9\]</sup> including the regression of potential confounding effects characterized by white matter timeseries (5 CompCor noise components), CSF timeseries (5 CompCor noise components), motion parameters (6 factors)<sup>\[10\]</sup>, outlier scans (below 100 factors)<sup>\[7\]</sup>, session effects and their first order derivatives (2 factors), and linear trends (2 factors) within each functional run, followed by bandpass frequency filtering of the BOLD timeseries<sup>\[11\]</sup> between 0.008 Hz and 0.09 Hz. CompCor<sup>\[12,13\]</sup> noise components within white matter and CSF were estimated by computing the average BOLD signal as well as the largest principal components orthogonal to the BOLD average, motion parameters, and outlier scans within each subject's eroded segmentation masks. From the number of noise terms included in this denoising strategy, the effective degrees of freedom of the BOLD signal after denoising were estimated to range from 59 to 72.2 (average 70.1) across all subjects<sup>\[8\]</sup>.
-
-**First-level analysis** SBC_01: Seed-based connectivity maps (SBC) and ROI-to-ROI connectivity matrices (RRC) were estimated characterizing the patterns of functional connectivity with 272 ROIs. Functional connectivity strength was represented by Fisher-transformed bivariate correlation coefficients from a weighted general linear model (weighted-GLM<sup>\[14\]</sup>), defined separately for each pair of seed and target areas, modeling the association between their BOLD signal timeseries. In order to compensate for possible transient magnetization effects at the beginning of each run, individual scans were weighted by a step function convolved with an SPM canonical hemodynamic response function and rectified.
-
-## References (CONN Toolbox)
-
-<sup>\[1\]</sup> Whitfield-Gabrieli, S., & Nieto-Castanon, A. (2012). Conn: a functional connectivity toolbox for correlated and anticorrelated brain networks. Brain connectivity, 2(3), 125-141.
-
-<sup>\[2\]</sup> Nieto-Castanon, A. & Whitfield-Gabrieli, S. (2022). CONN functional connectivity toolbox: RRID SCR_009550, release 22. doi:10.56441/hilbertpress.2246.5840.
-
-<sup>\[3\]</sup> Penny, W. D., Friston, K. J., Ashburner, J. T., Kiebel, S. J., & Nichols, T. E. (Eds.). (2011). Statistical parametric mapping: the analysis of functional brain images. Elsevier.
-
-<sup>\[4\]</sup> Nieto-Castanon, A. (2020). FMRI minimal preprocessing pipeline. In Handbook of functional connectivity Magnetic Resonance Imaging methods in CONN (pp. 3-16). Hilbert Press.
-
-<sup>\[5\]</sup> Friston, K. J., Ashburner, J., Frith, C. D., Poline, J. B., Heather, J. D., & Frackowiak, R. S. (1995). Spatial registration and normalization of images. Human brain mapping, 3(3), 165-189.
-
-<sup>\[6\]</sup> Whitfield-Gabrieli, S., Nieto-Castanon, A., & Ghosh, S. (2011). Artifact detection tools (ART). Cambridge, MA. Release Version, 7(19), 11.
-
-<sup>\[7\]</sup> Power, J. D., Mitra, A., Laumann, T. O., Snyder, A. Z., Schlaggar, B. L., & Petersen, S. E. (2014). Methods to detect, characterize, and remove motion artifact in resting state fMRI. Neuroimage, 84, 320-341.
-
-<sup>\[8\]</sup> Nieto-Castanon, A. (submitted). Preparing fMRI Data for Statistical Analysis. In M. Filippi (Ed.). fMRI techniques and protocols. Springer. doi:10.48550/arXiv.2210.13564
-
-<sup>\[9\]</sup> Nieto-Castanon, A. (2020). FMRI denoising pipeline. In Handbook of functional connectivity Magnetic Resonance Imaging methods in CONN (pp. 17-25). Hilbert Press.
-
-<sup>\[10\]</sup> Friston, K. J., Williams, S., Howard, R., Frackowiak, R. S., & Turner, R. (1996). Movement-related effects in fMRI time-series. Magnetic resonance in medicine, 35(3), 346-355.
-
-<sup>\[11\]</sup> Hallquist, M. N., Hwang, K., & Luna, B. (2013). The nuisance of nuisance regression: spectral misspecification in a common approach to resting-state fMRI preprocessing reintroduces noise and obscures functional connectivity. Neuroimage, 82, 208-225.
-
-<sup>\[12\]</sup> Behzadi, Y., Restom, K., Liau, J., & Liu, T. T. (2007). A component based noise correction method (CompCor) for BOLD and perfusion based fMRI. Neuroimage, 37(1), 90-101.
-
-<sup>\[13\]</sup> Chai, X. J., Nieto-Castanon, A., Ongur, D., & Whitfield-Gabrieli, S. (2012). Anticorrelations in resting state networks without global signal regression. Neuroimage, 59(2), 1420-1428.
-
-<sup>\[14\]</sup> Nieto-Castanon, A. (2020). Functional Connectivity measures. In Handbook of functional connectivity Magnetic Resonance Imaging methods in CONN (pp. 26-62). Hilbert Press.
-
 # Citation
 Pending review at IEEE Transactions on Computational Biology and Bioinformatics.
 Arxiv citation below:
