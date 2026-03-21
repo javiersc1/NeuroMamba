@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from scipy import stats
 import time
 from sklearn.model_selection import LeaveOneOut
-from NeuroMamba.models.NeuroMamba import MambaModel
+from models.Mamba import MambaModel
 from sklearn.kernel_ridge import KernelRidge
 from tqdm import tqdm
 

@@ -10,7 +10,7 @@ import time
 import matplotlib.pyplot as plt
 import seaborn as sns
 #from DeepScore.utils.trainpost import extract_features
-from NeuroMamba.models.NeuroMamba import NeuroMamba
+from models.Mamba import NeuroMamba
 from sklearn.model_selection import LeaveOneOut
 from NeuroMamba.utils.dataloaders import get_files, RSFMRI_DATALOADER
 from torch.utils.data import Dataset, DataLoader

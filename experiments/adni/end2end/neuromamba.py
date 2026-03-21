@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from scipy import stats
 import time
 from sklearn.model_selection import LeaveOneOut
-from NeuroMamba.models.NeuroMamba import NeuroMamba
+from models.Mamba import NeuroMamba
 from tqdm import tqdm
 from NeuroMamba.utils.adni import ADNI_LOADER, adni_import, adni_collate
 import glob

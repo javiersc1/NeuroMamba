@@ -8,7 +8,7 @@ from scipy import stats
 import time
 import matplotlib.pyplot as plt
 import seaborn as sns
-from NeuroMamba.models.NeuroMamba import *
+from models.Mamba import *
 from matplotlib.collections import LineCollection
 from scipy.ndimage import gaussian_filter1d
 
