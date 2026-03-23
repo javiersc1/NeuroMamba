@@ -9,6 +9,7 @@ import time
 
 def adni_collate(data, info, file_mode="all"):
     if file_mode == "train":
+        #print(data.shape)
         return data, info
     if file_mode == "all":
         n_batch, n_scans, n_time, n_regions = data.shape

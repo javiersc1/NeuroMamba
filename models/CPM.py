@@ -26,7 +26,39 @@ def CPM(loader, score_amount=3, mode="mocaz", edge_type="positive", thresh=0.01)
         Scores.append(score)
 
     Scores = np.array(Scores).squeeze()
+    Scores = Scores[:, None] if Scores.ndim == 1 else Scores
     FC = np.array(FC).squeeze()
+
+    # CPM
+    for i in range(score_amount):
+        y = Scores[:, i]
+        features, mask = cpm_method(FC, y, thresh=thresh, edge_type=edge_type)
+        subjectFeatures.append(features)
+        masks.append(mask)
+
+    subjectFeatures = np.concatenate(subjectFeatures, axis=1)
+    masks = np.stack(masks, axis=1)
+
+    return subjectFeatures, Scores, masks
+
+def CPM_ADNI(loader, score_amount=3, mode="mocaz", edge_type="positive", thresh=0.01, file_mode="train"):
+    FC = []
+    Scores = []
+    masks = []
+    subjectFeatures = []
+
+    for idx, (data,info) in enumerate(loader):
+        data, info = adni_collate(data, info, file_mode=file_mode)
+        x = data.to(device="cpu")
+        x = generateStaticFC(x)
+        x = matrix2vec(x)
+        FC.append(x.numpy())
+        score = mapScores(info, num=score_amount, mode=mode)
+        Scores.append(score)
+
+    Scores = np.concatenate(Scores)
+    Scores = Scores[:, None] if Scores.ndim == 1 else Scores
+    FC = np.concatenate(FC)
 
     # CPM
     for i in range(score_amount):
