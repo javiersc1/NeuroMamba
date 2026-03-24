@@ -9,13 +9,13 @@ from torch.utils.data import Dataset, DataLoader
 from scipy import stats
 import time
 from sklearn.model_selection import LeaveOneOut
-from models.Mamba import NeuroMamba
+from NeuroMamba.models.Mamba import NeuroMamba
 from sklearn.kernel_ridge import KernelRidge
 from tqdm import tqdm
 
 def evaluate(testloader, fold):
     model = NeuroMamba(n_layers=n_layers, state_dim=state_dim, num_variables=272, score_amount=score_amount).to("cuda")
-    model.load_state_dict(torch.load(os.path.join(f'/home/javier/weights/loo/neuromamba_regressed/b1_{fold}_10.pth')))
+    model.load_state_dict(torch.load(os.path.join(f'/home/javier/weights/loo/neuromamba_regressed/b1_{fold}_50.pth')))
     model.eval()
     realScores = 0.
     predictedScores = 0.
