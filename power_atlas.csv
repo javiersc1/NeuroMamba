@@ -1,0 +1,273 @@
+﻿ROI,X,Y,Z,Master Assignment,Color,Power Suggested System,Brodmann area,Cerebrum,Lobe,TD Label,Matter,TD Brodman Area
+1,-25,-98,-12,-1,White,Uncertain,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Lingual Gyrus,Gray Matter,Brodmann area 18
+2,27,-97,-13,-1,White,Uncertain,Right-SecVisual (18),Right Cerebrum,Occipital Lobe,Lingual Gyrus,*,*
+3,24,32,-18,-1,White,Uncertain,Right-OrbFrontal (11),Right Cerebrum,Frontal Lobe,Sub-Gyral,White Matter,*
+4,-56,-45,-24,-1,White,Uncertain,Left-Fusiform (37),Left Cerebrum,Temporal Lobe,Fusiform Gyrus,Gray Matter,Brodmann area 37
+5,8,41,-24,-1,White,Uncertain,Right-OrbFrontal (11),Right Cerebrum,Frontal Lobe,Rectal Gyrus,White Matter,*
+6,-21,-22,-20,-1,White,Uncertain,Left-Parahipp (36),Left Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Brodmann area 35
+7,17,-28,-17,-1,White,Uncertain,Outside defined BAs,Right Cerebrum,Limbic Lobe,*,*,*
+8,-37,-29,-26,-1,White,Uncertain,Left-Parahipp (36),Left Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Brodmann area 36
+9,65,-24,-19,-1,White,Uncertain,Right-MedTempGyrus (21),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 21
+10,52,-34,-27,-1,White,Uncertain,Outside defined BAs,Right Cerebrum,Temporal Lobe,Fusiform Gyrus,White Matter,*
+11,55,-31,-17,-1,White,Uncertain,Right-MedTempGyrus (21),Right Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+12,34,38,-12,-1,White,Uncertain,Right-ParsOrbitalis (47),Right Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+13,-7,-52,61,1,Cyan,Sensory/somatomotor Hand,Left-VisMotor (7),Left Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+14,-14,-18,40,1,Cyan,Sensory/somatomotor Hand,Left-VentAntCing (24),Left Cerebrum,Limbic Lobe,Cingulate Gyrus,White Matter,*
+15,0,-15,47,1,Cyan,Sensory/somatomotor Hand,Right-VentAntCing (24),Left Cerebrum,Frontal Lobe,Paracentral Lobule,*,*
+16,10,-2,45,1,Cyan,Sensory/somatomotor Hand,Outside defined BAs,Right Cerebrum,Limbic Lobe,Cingulate Gyrus,White Matter,*
+17,-7,-21,65,1,Cyan,Sensory/somatomotor Hand,Left-PrimMotor (4),Left Cerebrum,Frontal Lobe,Medial Frontal Gyrus,White Matter,*
+18,-7,-33,72,1,Cyan,Sensory/somatomotor Hand,Left-PrimSensory (1),Left Cerebrum,Frontal Lobe,Paracentral Lobule,Gray Matter,Brodmann area 6
+19,13,-33,75,1,Cyan,Sensory/somatomotor Hand,Right-PrimSensory (1),Right Cerebrum,Frontal Lobe,Precentral Gyrus,White Matter,*
+20,-54,-23,43,1,Cyan,Sensory/somatomotor Hand,Left-SupramargGyr (40),Left Cerebrum,Parietal Lobe,Postcentral Gyrus,White Matter,*
+21,29,-17,71,1,Cyan,Sensory/somatomotor Hand,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Precentral Gyrus,Gray Matter,Brodmann area 6
+22,10,-46,73,1,Cyan,Sensory/somatomotor Hand,Right-VisMotor (7),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,White Matter,*
+23,-23,-30,72,1,Cyan,Sensory/somatomotor Hand,Left-PrimSensory (1),Left Cerebrum,Parietal Lobe,Precentral Gyrus,*,*
+24,-40,-19,54,1,Cyan,Sensory/somatomotor Hand,Left-PrimMotor (4),Left Cerebrum,Parietal Lobe,Precentral Gyrus,*,*
+25,29,-39,59,1,Cyan,Sensory/somatomotor Hand,Right-PrimSensory (1),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,Gray Matter,Brodmann area 40
+26,50,-20,42,1,Cyan,Sensory/somatomotor Hand,Right-PrimSensory (1),Right Cerebrum,Frontal Lobe,Postcentral Gyrus,White Matter,*
+27,-38,-27,69,1,Cyan,Sensory/somatomotor Hand,Left-PrimMotor (4),Left Cerebrum,Frontal Lobe,Precentral Gyrus,*,*
+28,20,-29,60,1,Cyan,Sensory/somatomotor Hand,Right-PrimMotor (4),Right Cerebrum,Frontal Lobe,Precentral Gyrus,*,*
+29,44,-8,57,1,Cyan,Sensory/somatomotor Hand,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Precentral Gyrus,Gray Matter,Brodmann area 6
+30,-29,-43,61,1,Cyan,Sensory/somatomotor Hand,Outside defined BAs,Left Cerebrum,Parietal Lobe,Inferior Parietal Lobule,White Matter,*
+31,10,-17,74,1,Cyan,Sensory/somatomotor Hand,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,White Matter,*
+32,22,-42,69,1,Cyan,Sensory/somatomotor Hand,Right-SensoryAssoc (5),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,White Matter,*
+33,-45,-32,47,1,Cyan,Sensory/somatomotor Hand,Left-PrimSensory (1),Left Cerebrum,Parietal Lobe,Inferior Parietal Lobule,Gray Matter,Brodmann area 40
+34,-21,-31,61,1,Cyan,Sensory/somatomotor Hand,Left-PrimSensory (1),Left Cerebrum,Parietal Lobe,Postcentral Gyrus,Gray Matter,Brodmann area 3
+35,-13,-17,75,1,Cyan,Sensory/somatomotor Hand,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 6
+36,42,-20,55,1,Cyan,Sensory/somatomotor Hand,Right-PrimMotor (4),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,Gray Matter,Brodmann area 3
+37,-38,-15,69,1,Cyan,Sensory/somatomotor Hand,Outside defined BAs,Left Cerebrum,Frontal Lobe,Precentral Gyrus,White Matter,*
+38,-16,-46,73,1,Cyan,Sensory/somatomotor Hand,Left-VisMotor (7),Left Cerebrum,Parietal Lobe,Postcentral Gyrus,White Matter,*
+39,2,-28,60,1,Cyan,Sensory/somatomotor Hand,Right-PrimMotor (4),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 6
+40,3,-17,58,1,Cyan,Sensory/somatomotor Hand,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 6
+41,38,-17,45,1,Cyan,Sensory/somatomotor Hand,Right-PrimMotor (4),Right Cerebrum,Frontal Lobe,Precentral Gyrus,White Matter,*
+42,-49,-11,35,2,Orange,Sensory/somatomotor Mouth,Left-PrimMotor (4),Left Cerebrum,Frontal Lobe,Precentral Gyrus,Gray Matter,Brodmann area 6
+43,36,-9,14,2,Orange,Sensory/somatomotor Mouth,Right-Insula (13),Right Cerebrum,Sub-lobar,Insula,White Matter,*
+44,51,-6,32,2,Orange,Sensory/somatomotor Mouth,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Precentral Gyrus,Gray Matter,Brodmann area 6
+45,-53,-10,24,2,Orange,Sensory/somatomotor Mouth,Outside defined BAs,Left Cerebrum,Frontal Lobe,Postcentral Gyrus,White Matter,*
+46,66,-8,25,2,Orange,Sensory/somatomotor Mouth,Right-PrimMotor (4),Right Cerebrum,Frontal Lobe,Precentral Gyrus,Gray Matter,Brodmann area 4
+47,-3,2,53,3,Purple,Cingulo-opercular Task Control,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Medial Frontal Gyrus,*,*
+48,54,-28,34,3,Purple,Cingulo-opercular Task Control,Right-SupramargGyr (40),Right Cerebrum,Parietal Lobe,Inferior Parietal Lobule,*,*
+49,19,-8,64,3,Purple,Cingulo-opercular Task Control,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 6
+50,-16,-5,71,3,Purple,Cingulo-opercular Task Control,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+51,-10,-2,42,3,Purple,Cingulo-opercular Task Control,Left-VentAntCing (24),Left Cerebrum,Limbic Lobe,Cingulate Gyrus,White Matter,*
+52,37,1,-4,3,Purple,Cingulo-opercular Task Control,Outside defined BAs,Right Cerebrum,Sub-lobar,Claustrum,Gray Matter,*
+53,13,-1,70,3,Purple,Cingulo-opercular Task Control,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+54,7,8,51,3,Purple,Cingulo-opercular Task Control,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 32
+55,-45,0,9,3,Purple,Cingulo-opercular Task Control,Left-PreMot+SuppMot (6),Left Cerebrum,Sub-lobar,Insula,Gray Matter,Brodmann area 13
+56,49,8,-1,3,Purple,Cingulo-opercular Task Control,Outside defined BAs,Right Cerebrum,Sub-lobar,Insula,Gray Matter,Brodmann area 13
+57,-34,3,4,3,Purple,Cingulo-opercular Task Control,Outside defined BAs,Left Cerebrum,Sub-lobar,Claustrum,Gray Matter,*
+58,-51,8,-2,3,Purple,Cingulo-opercular Task Control,Outside defined BAs,Left Cerebrum,Temporal Lobe,Superior Temporal Gyrus,*,*
+59,-5,18,34,3,Purple,Cingulo-opercular Task Control,Left-DorsalACC (32),Left Cerebrum,Limbic Lobe,Cingulate Gyrus,Gray Matter,Brodmann area 32
+60,36,10,1,3,Purple,Cingulo-opercular Task Control,Right-Insula (13),Right Cerebrum,Sub-lobar,Extra-Nuclear,White Matter,*
+61,32,-26,13,4,Pink,Auditory,Right-Insula (13),Right Cerebrum,Sub-lobar,Insula,Gray Matter,Brodmann area 13
+62,65,-33,20,4,Pink,Auditory,Right-SupTempGyrus (22),Right Cerebrum,Temporal Lobe,Superior Temporal Gyrus,Gray Matter,Brodmann area 42
+63,58,-16,7,4,Pink,Auditory,Right-PrimAuditory (41),Right Cerebrum,Temporal Lobe,Transverse Temporal Gyrus,Gray Matter,Brodmann area 41
+64,-38,-33,17,4,Pink,Auditory,Left-SupramargGyr (40),Left Cerebrum,Sub-lobar,Insula,Gray Matter,Brodmann area 13
+65,-60,-25,14,4,Pink,Auditory,Left-SupramargGyr (40),Left Cerebrum,Temporal Lobe,Superior Temporal Gyrus,*,*
+66,-49,-26,5,4,Pink,Auditory,Left-PrimAuditory (41),Left Cerebrum,Temporal Lobe,Superior Temporal Gyrus,Gray Matter,Brodmann area 41
+67,43,-23,20,4,Pink,Auditory,Right-SupramargGyr (40),Right Cerebrum,Sub-lobar,Insula,White Matter,*
+68,-50,-34,26,4,Pink,Auditory,Left-SupramargGyr (40),Left Cerebrum,Parietal Lobe,Inferior Parietal Lobule,White Matter,*
+69,-53,-22,23,4,Pink,Auditory,Left-SupramargGyr (40),Left Cerebrum,Parietal Lobe,Postcentral Gyrus,White Matter,*
+70,-55,-9,12,4,Pink,Auditory,Left-PrimMotor (4),Left Cerebrum,Frontal Lobe,Precentral Gyrus,Gray Matter,Brodmann area 43
+71,56,-5,13,4,Pink,Auditory,Right-PrimSensory (1),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,Gray Matter,Brodmann area 43
+72,59,-17,29,4,Pink,Auditory,Right-SupramargGyr (40),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,White Matter,*
+73,-30,-27,12,4,Pink,Auditory,Outside defined BAs,Left Cerebrum,Sub-lobar,Insula,White Matter,*
+74,-41,-75,26,5,Red,Default mode,Left-VisualAssoc (19),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 39
+75,6,67,-4,5,Red,Default mode,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 10
+76,8,48,-15,5,Red,Default mode,Right-OrbFrontal (11),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,White Matter,*
+77,-13,-40,1,5,Red,Default mode,Left-AgrRetrolimb (30),Left Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Brodmann area 30
+78,-18,63,-9,5,Red,Default mode,Left-AntPFC (10),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+79,-46,-61,21,5,Red,Default mode,Left-AngGyrus (39),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 39
+80,43,-72,28,5,Red,Default mode,Right-VisualAssoc (19),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+81,-44,12,-34,5,Red,Default mode,Left-Temporalpole (38),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 21
+82,46,16,-30,5,Red,Default mode,Right-Temporalpole (38),Right Cerebrum,Temporal Lobe,Superior Temporal Gyrus,White Matter,*
+83,-68,-23,-16,5,Red,Default mode,Left-MedTempGyrus (21),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+84,-58,-26,-15,-1,White,Uncertain,Left-MedTempGyrus (21),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+85,27,16,-17,-1,White,Uncertain,Right-Insula (13),Right Cerebrum,Frontal Lobe,Sub-Gyral,White Matter,*
+86,-44,-65,35,5,Red,Default mode,Left-AngGyrus (39),Left Cerebrum,Parietal Lobe,Angular Gyrus,White Matter,*
+87,-39,-75,44,5,Red,Default mode,Left-AngGyrus (39),Left Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+88,-7,-55,27,5,Red,Default mode,Left-DorsalPCC (31),Left Cerebrum,Limbic Lobe,Cingulate Gyrus,White Matter,*
+89,6,-59,35,5,Red,Default mode,Right-DorsalPCC (31),Right Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+90,-11,-56,16,5,Red,Default mode,Left-VentPostCing (23),Left Cerebrum,Limbic Lobe,Posterior Cingulate,White Matter,*
+91,-3,-49,13,5,Red,Default mode,Outside defined BAs,Left Cerebrum,Limbic Lobe,Posterior Cingulate,Gray Matter,Brodmann area 30
+92,8,-48,31,5,Red,Default mode,Right-VentPostCing (23),Right Cerebrum,Parietal Lobe,Precuneus,*,*
+93,15,-63,26,5,Red,Default mode,Right-DorsalPCC (31),Right Cerebrum,Occipital Lobe,Precuneus,Gray Matter,Brodmann area 31
+94,-2,-37,44,5,Red,Default mode,Left-DorsalPCC (31),Left Cerebrum,Limbic Lobe,Cingulate Gyrus,*,*
+95,11,-54,17,5,Red,Default mode,Right-VentPostCing (23),Right Cerebrum,Limbic Lobe,Posterior Cingulate,White Matter,*
+96,52,-59,36,5,Red,Default mode,Right-AngGyrus (39),Right Cerebrum,Parietal Lobe,Angular Gyrus,White Matter,*
+97,23,33,48,5,Red,Default mode,Right-FrontEyeFields (8),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 8
+98,-10,39,52,5,Red,Default mode,Left-FrontEyeFields (8),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+99,-16,29,53,5,Red,Default mode,Left-FrontEyeFields (8),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+100,-35,20,51,5,Red,Default mode,Left-FrontEyeFields (8),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 8
+101,22,39,39,5,Red,Default mode,Right-FrontEyeFields (8),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 9
+102,13,55,38,5,Red,Default mode,Right-dlPFC(dorsal) (9),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 9
+103,-10,55,39,5,Red,Default mode,Left-dlPFC(dorsal) (9),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 9
+104,-20,45,39,5,Red,Default mode,Left-dlPFC(dorsal) (9),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+105,6,54,16,5,Red,Default mode,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 10
+106,6,64,22,5,Red,Default mode,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 10
+107,-7,51,-1,5,Red,Default mode,Left-DorsalACC (32),Left Cerebrum,Limbic Lobe,Anterior Cingulate,White Matter,*
+108,9,54,3,5,Red,Default mode,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,*
+109,-3,44,-9,5,Red,Default mode,Left-AntPFC (10),Left Cerebrum,Limbic Lobe,Anterior Cingulate,Gray Matter,Brodmann area 32
+110,8,42,-5,5,Red,Default mode,Right-AntPFC (10),Right Cerebrum,Limbic Lobe,Anterior Cingulate,White Matter,*
+111,-11,45,8,5,Red,Default mode,Left-DorsalACC (32),Left Cerebrum,Limbic Lobe,Anterior Cingulate,White Matter,*
+112,-2,38,36,5,Red,Default mode,Left-FrontEyeFields (8),Left Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 9
+113,-3,42,16,5,Red,Default mode,Left-DorsalACC (32),Left Cerebrum,Limbic Lobe,Anterior Cingulate,Gray Matter,Brodmann area 32
+114,-20,64,19,5,Red,Default mode,Left-AntPFC (10),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+115,-8,48,23,5,Red,Default mode,Left-dlPFC(dorsal) (9),Left Cerebrum,Frontal Lobe,Medial Frontal Gyrus,White Matter,*
+116,65,-12,-19,5,Red,Default mode,Right-MedTempGyrus (21),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 21
+117,-56,-13,-10,5,Red,Default mode,Left-MedTempGyrus (21),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+118,-58,-30,-4,5,Red,Default mode,Left-MedTempGyrus (21),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,*
+119,65,-31,-9,5,Red,Default mode,Right-MedTempGyrus (21),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+120,-68,-41,-5,5,Red,Default mode,Left-MedTempGyrus (21),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 21
+121,13,30,59,5,Red,Default mode,Right-FrontEyeFields (8),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 6
+122,12,36,20,5,Red,Default mode,Right-dlPFC(dorsal) (9),Right Cerebrum,Limbic Lobe,Anterior Cingulate,White Matter,*
+123,52,-2,-16,5,Red,Default mode,Right-SupTempGyrus (22),Right Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+124,-26,-40,-8,5,Red,Default mode,Left-Parahipp (36),Left Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+125,27,-37,-13,5,Red,Default mode,Right-Parahipp (36),Right Cerebrum,Limbic Lobe,Parahippocampal Gyrus,White Matter,*
+126,-34,-38,-16,5,Red,Default mode,Outside defined BAs,Left Cerebrum,Limbic Lobe,Parahippocampal Gyrus,White Matter,*
+127,28,-77,-32,5,Red,Default mode,Outside defined BAs,Right Cerebellum,Posterior Lobe,Uvula,Gray Matter,*
+128,52,7,-30,5,Red,Default mode,Right-Temporalpole (38),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+129,-53,3,-27,5,Red,Default mode,Left-Temporalpole (38),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+130,47,-50,29,5,Red,Default mode,Right-AngGyrus (39),Right Cerebrum,Parietal Lobe,Supramarginal Gyrus,White Matter,*
+131,-49,-42,1,5,Red,Default mode,Left-MedTempGyrus (21),Left Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+132,-31,19,-19,-1,White,Uncertain,Left-ParsOrbitalis (47),Left Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,Gray Matter,Brodmann area 13
+133,-2,-35,31,6,Gray,Memory retrieval?,Left-VentPostCing (23),Left Cerebrum,Limbic Lobe,Cingulate Gyrus,Gray Matter,Brodmann area 31
+134,-7,-71,42,6,Gray,Memory retrieval?,Left-VisMotor (7),Left Cerebrum,Parietal Lobe,Precuneus,Gray Matter,Brodmann area 7
+135,11,-66,42,6,Gray,Memory retrieval?,Right-VisMotor (7),Right Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+136,4,-48,51,6,Gray,Memory retrieval?,Right-DorsalPCC (31),Right Cerebrum,Parietal Lobe,Precuneus,Gray Matter,Brodmann area 7
+137,-46,31,-13,5,Red,Default mode,Left-ParsOrbitalis (47),Left Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+138,-10,11,67,11,Teal,Ventral attention,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+139,49,35,-12,5,Red,Default mode,Right-ParsOrbitalis (47),Right Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+140,8,-91,-7,-1,White,Uncertain,Right-SecVisual (18),Right Cerebrum,Occipital Lobe,Lingual Gyrus,White Matter,*
+141,17,-91,-14,-1,White,Uncertain,Right-SecVisual (18),Right Cerebrum,Occipital Lobe,Inferior Occipital Gyrus,White Matter,*
+142,-12,-95,-13,-1,White,Uncertain,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Lingual Gyrus,White Matter,*
+143,18,-47,-10,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Brodmann area 19
+144,40,-72,14,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Middle Temporal Gyrus,White Matter,*
+145,8,-72,11,7,Blue,Visual,Right-PrimVisual (17),Right Cerebrum,Occipital Lobe,Cuneus,*,*
+146,-8,-81,7,7,Blue,Visual,Left-PrimVisual (17),Left Cerebrum,Occipital Lobe,Cuneus,*,*
+147,-28,-79,19,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Middle Occipital Gyrus,White Matter,*
+148,20,-66,2,7,Blue,Visual,Outside defined BAs,Right Cerebrum,Limbic Lobe,Posterior Cingulate,Gray Matter,Brodmann area 30
+149,-24,-91,19,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Middle Occipital Gyrus,White Matter,*
+150,27,-59,-9,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Lingual Gyrus,White Matter,*
+151,-15,-72,-8,7,Blue,Visual,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Lingual Gyrus,White Matter,*
+152,-18,-68,5,7,Blue,Visual,Left-PrimVisual (17),Left Cerebrum,Occipital Lobe,Cuneus,White Matter,*
+153,43,-78,-12,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Inferior Occipital Gyrus,Gray Matter,Brodmann area 19
+154,-47,-76,-10,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Middle Occipital Gyrus,Gray Matter,Brodmann area 19
+155,-14,-91,31,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Cuneus,White Matter,*
+156,15,-87,37,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Cuneus,Gray Matter,Brodmann area 19
+157,29,-77,25,7,Blue,Visual,Right-AngGyrus (39),Right Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+158,20,-86,-2,7,Blue,Visual,Right-SecVisual (18),Right Cerebrum,Occipital Lobe,Lingual Gyrus,White Matter,*
+159,15,-77,31,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Cuneus,Gray Matter,Brodmann area 7
+160,-16,-52,-1,7,Blue,Visual,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Lingual Gyrus,*,*
+161,42,-66,-8,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+162,24,-87,24,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Cuneus,White Matter,*
+163,6,-72,24,7,Blue,Visual,Right-SecVisual (18),Right Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+164,-42,-74,0,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Middle Occipital Gyrus,White Matter,*
+165,26,-79,-16,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Lingual Gyrus,White Matter,*
+166,-16,-77,34,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Cuneus,White Matter,*
+167,-3,-81,21,7,Blue,Visual,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Cuneus,White Matter,*
+168,-40,-88,-6,7,Blue,Visual,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Middle Occipital Gyrus,White Matter,*
+169,37,-84,13,7,Blue,Visual,Right-VisualAssoc (19),Right Cerebrum,Occipital Lobe,Middle Occipital Gyrus,White Matter,*
+170,6,-81,6,7,Blue,Visual,Right-PrimVisual (17),Right Cerebrum,Occipital Lobe,Cuneus,White Matter,*
+171,-26,-90,3,7,Blue,Visual,Left-SecVisual (18),Left Cerebrum,Occipital Lobe,Middle Occipital Gyrus,Gray Matter,Brodmann area 19
+172,-33,-79,-13,7,Blue,Visual,Left-VisualAssoc (19),Left Cerebrum,Occipital Lobe,Inferior Occipital Gyrus,White Matter,*
+173,37,-81,1,7,Blue,Visual,Right-SecVisual (18),Right Cerebrum,Occipital Lobe,Middle Occipital Gyrus,White Matter,*
+174,-44,2,46,8,Yellow,Fronto-parietal Task Control,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 6
+175,48,25,27,8,Yellow,Fronto-parietal Task Control,Right-dlPFC(dorsal) (9),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+176,-47,11,23,8,Yellow,Fronto-parietal Task Control,Left-Broca-Operc (44),Left Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+177,-53,-49,43,8,Yellow,Fronto-parietal Task Control,Left-AngGyrus (39),Left Cerebrum,Parietal Lobe,Inferior Parietal Lobule,White Matter,*
+178,-23,11,64,8,Yellow,Fronto-parietal Task Control,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Superior Frontal Gyrus,*,*
+179,58,-53,-14,8,Yellow,Fronto-parietal Task Control,Right-Fusiform (37),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 37
+180,24,45,-15,8,Yellow,Fronto-parietal Task Control,Right-ParsOrbitalis (47),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 11
+181,34,54,-13,8,Yellow,Fronto-parietal Task Control,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+182,-21,41,-20,-1,White,Uncertain,Left-OrbFrontal (11),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+183,-18,-76,-24,-1,White,Uncertain,Outside defined BAs,Left Cerebellum,Posterior Lobe,Declive,Gray Matter,*
+184,17,-80,-34,-1,White,Uncertain,Outside defined BAs,Right Cerebellum,Posterior Lobe,Uvula,Gray Matter,*
+185,35,-67,-34,-1,White,Uncertain,Outside defined BAs,Right Cerebellum,Posterior Lobe,Uvula,Gray Matter,*
+186,47,10,33,8,Yellow,Fronto-parietal Task Control,Right-Broca-Operc (44),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+187,-41,6,33,8,Yellow,Fronto-parietal Task Control,Left-FrontEyeFields (8),Left Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+188,-42,38,21,8,Yellow,Fronto-parietal Task Control,Left-dlPFC(lat) (46),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+189,38,43,15,8,Yellow,Fronto-parietal Task Control,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+190,49,-42,45,8,Yellow,Fronto-parietal Task Control,Right-SupramargGyr (40),Right Cerebrum,Parietal Lobe,Inferior Parietal Lobule,White Matter,*
+191,-28,-58,48,8,Yellow,Fronto-parietal Task Control,Left-VisMotor (7),Left Cerebrum,Parietal Lobe,Superior Parietal Lobule,White Matter,*
+192,44,-53,47,8,Yellow,Fronto-parietal Task Control,Right-AngGyrus (39),Right Cerebrum,Parietal Lobe,Inferior Parietal Lobule,Gray Matter,Brodmann area 40
+193,32,14,56,8,Yellow,Fronto-parietal Task Control,Right-FrontEyeFields (8),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,White Matter,*
+194,37,-65,40,8,Yellow,Fronto-parietal Task Control,Right-AngGyrus (39),Right Cerebrum,Parietal Lobe,Angular Gyrus,Gray Matter,Brodmann area 39
+195,-42,-55,45,8,Yellow,Fronto-parietal Task Control,Left-AngGyrus (39),Left Cerebrum,Parietal Lobe,Inferior Parietal Lobule,White Matter,*
+196,40,18,40,8,Yellow,Fronto-parietal Task Control,Right-FrontEyeFields (8),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+197,-34,55,4,8,Yellow,Fronto-parietal Task Control,Left-AntPFC (10),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+198,-42,45,-2,8,Yellow,Fronto-parietal Task Control,Left-AntPFC (10),Left Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+199,33,-53,44,8,Yellow,Fronto-parietal Task Control,Right-AngGyrus (39),Right Cerebrum,Parietal Lobe,Sub-Gyral,White Matter,*
+200,43,49,-2,8,Yellow,Fronto-parietal Task Control,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,Gray Matter,Brodmann area 10
+201,-42,25,30,8,Yellow,Fronto-parietal Task Control,Left-dlPFC(dorsal) (9),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+202,-3,26,44,8,Yellow,Fronto-parietal Task Control,Left-FrontEyeFields (8),Left Cerebrum,Frontal Lobe,Medial Frontal Gyrus,Gray Matter,Brodmann area 8
+203,11,-39,50,9,Black,Salience,Right-DorsalPCC (31),Right Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+204,55,-45,37,9,Black,Salience,Right-SupramargGyr (40),Right Cerebrum,Parietal Lobe,Supramarginal Gyrus,White Matter,*
+205,42,0,47,9,Black,Salience,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 6
+206,31,33,26,9,Black,Salience,Right-dlPFC(dorsal) (9),Right Cerebrum,Frontal Lobe,Sub-Gyral,White Matter,*
+207,48,22,10,9,Black,Salience,Right-Broca-Triang (45),Right Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,Gray Matter,Brodmann area 45
+208,-35,20,0,9,Black,Salience,Left-Insula (13),Left Cerebrum,Sub-lobar,Insula,White Matter,*
+209,36,22,3,9,Black,Salience,Right-Insula (13),Right Cerebrum,Sub-lobar,Insula,Gray Matter,Brodmann area 13
+210,37,32,-2,9,Black,Salience,Right-ParsOrbitalis (47),Right Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+211,34,16,-8,9,Black,Salience,Right-Insula (13),Right Cerebrum,Sub-lobar,Insula,White Matter,*
+212,-11,26,25,9,Black,Salience,Outside defined BAs,Left Cerebrum,Limbic Lobe,Anterior Cingulate,White Matter,*
+213,-1,15,44,9,Black,Salience,Outside defined BAs,Inter-Hemispheric,*,*,*,*
+214,-28,52,21,9,Black,Salience,Left-AntPFC (10),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+215,0,30,27,9,Black,Salience,Right-DorsalACC (32),Inter-Hemispheric,*,*,*,*
+216,5,23,37,9,Black,Salience,Right-FrontEyeFields (8),Right Cerebrum,Frontal Lobe,Cingulate Gyrus,Gray Matter,Brodmann area 32
+217,10,22,27,9,Black,Salience,Right-DorsalACC (32),Right Cerebrum,Limbic Lobe,Anterior Cingulate,Gray Matter,Brodmann area 24
+218,31,56,14,9,Black,Salience,Right-AntPFC (10),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+219,26,50,27,9,Black,Salience,Right-dlPFC(dorsal) (9),Right Cerebrum,Frontal Lobe,Superior Frontal Gyrus,Gray Matter,Brodmann area 10
+220,-39,51,17,9,Black,Salience,Left-AntPFC (10),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 46
+221,2,-24,30,6,Gray,Memory retrieval?,Outside defined BAs,Right Cerebrum,Limbic Lobe,Cingulate Gyrus,*,*
+222,6,-24,0,10,Brown,Subcortical,Right-Thalamus,Right Cerebrum,Sub-lobar,Thalamus,Gray Matter,Pulvinar
+223,-2,-13,12,10,Brown,Subcortical,Left-Thalamus,Inter-Hemispheric,Sub-lobar,Extra-Nuclear,White Matter,*
+224,-10,-18,7,10,Brown,Subcortical,Left-Thalamus,Left Cerebrum,Sub-lobar,Thalamus,Gray Matter,Medial Dorsal Nucleus
+225,12,-17,8,10,Brown,Subcortical,Right-Thalamus,Right Cerebrum,Sub-lobar,Thalamus,Gray Matter,Medial Dorsal Nucleus
+226,-5,-28,-4,10,Brown,Subcortical,Outside defined BAs,Left Brainstem,Midbrain,*,*,*
+227,-22,7,-5,10,Brown,Subcortical,Left-Putamen,Left Cerebrum,Sub-lobar,Lentiform Nucleus,Gray Matter,Putamen
+228,-15,4,8,10,Brown,Subcortical,Outside defined BAs,Left Cerebrum,Sub-lobar,Lentiform Nucleus,Gray Matter,Putamen
+229,31,-14,2,10,Brown,Subcortical,Right-Putamen,Right Cerebrum,Sub-lobar,Lentiform Nucleus,Gray Matter,Putamen
+230,23,10,1,10,Brown,Subcortical,Right-Putamen,Right Cerebrum,Sub-lobar,Lentiform Nucleus,Gray Matter,Putamen
+231,29,1,4,10,Brown,Subcortical,Right-Putamen,Right Cerebrum,Sub-lobar,Lentiform Nucleus,Gray Matter,Putamen
+232,-31,-11,0,10,Brown,Subcortical,Left-Putamen,Left Cerebrum,Sub-lobar,Lentiform Nucleus,Gray Matter,Putamen
+233,15,5,7,10,Brown,Subcortical,Outside defined BAs,Right Cerebrum,Sub-lobar,Extra-Nuclear,White Matter,*
+234,9,-4,6,10,Brown,Subcortical,Right-Thalamus,Right Cerebrum,Sub-lobar,Thalamus,Gray Matter,*
+235,54,-43,22,11,Teal,Ventral attention,Right-AngGyrus (39),Right Cerebrum,Parietal Lobe,Inferior Parietal Lobule,White Matter,*
+236,-56,-50,10,11,Teal,Ventral attention,Left-AngGyrus (39),Left Cerebrum,Temporal Lobe,Superior Temporal Gyrus,Gray Matter,Brodmann area 22
+237,-55,-40,14,11,Teal,Ventral attention,Left-SupTempGyrus (22),Left Cerebrum,Temporal Lobe,Superior Temporal Gyrus,White Matter,*
+238,52,-33,8,11,Teal,Ventral attention,Right-SupTempGyrus (22),Right Cerebrum,Temporal Lobe,Superior Temporal Gyrus,White Matter,*
+239,51,-29,-4,11,Teal,Ventral attention,Right-SupTempGyrus (22),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,Gray Matter,Brodmann area 22
+240,56,-46,11,11,Teal,Ventral attention,Right-AngGyrus (39),Right Cerebrum,Temporal Lobe,Superior Temporal Gyrus,White Matter,*
+241,53,33,1,11,Teal,Ventral attention,Right-Broca-Triang (45),Right Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+242,-49,25,-1,11,Teal,Ventral attention,Left-Broca-Triang (45),Left Cerebrum,Frontal Lobe,Inferior Frontal Gyrus,White Matter,*
+243,-16,-65,-20,13,lightblue,Cerebellar,Outside defined BAs,Left Cerebellum,Posterior Lobe,Declive,Gray Matter,*
+244,-32,-55,-25,13,lightblue,Cerebellar,Outside defined BAs,Left Cerebellum,Posterior Lobe,Declive,Gray Matter,*
+245,22,-58,-23,13,lightblue,Cerebellar,Outside defined BAs,Right Cerebellum,Posterior Lobe,Declive,Gray Matter,*
+246,1,-62,-18,13,lightblue,Cerebellar,Outside defined BAs,Right Cerebellum,Posterior Lobe,Declive,Gray Matter,*
+247,33,-12,-34,-1,White,Uncertain,Right-Parahipp (36),Right Cerebrum,Limbic Lobe,Parahippocampal Gyrus,White Matter,*
+248,-31,-10,-36,-1,White,Uncertain,Left-Parahipp (36),Left Cerebrum,Limbic Lobe,Uncus,Gray Matter,Brodmann area 20
+249,49,-3,-38,-1,White,Uncertain,Right-InfTempGyrus (20),Right Cerebrum,Temporal Lobe,Inferior Temporal Gyrus,White Matter,*
+250,-50,-7,-39,-1,White,Uncertain,Left-InfTempGyrus (20),Left Cerebrum,Temporal Lobe,Inferior Temporal Gyrus,Gray Matter,Brodmann area 20
+251,10,-62,61,12,Green,Dorsal attention,Right-VisMotor (7),Right Cerebrum,Parietal Lobe,Precuneus,Gray Matter,Brodmann area 7
+252,-52,-63,5,12,Green,Dorsal attention,Left-VisualAssoc (19),Left Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+253,-47,-51,-21,-1,White,Uncertain,Left-Fusiform (37),Left Cerebrum,Temporal Lobe,Fusiform Gyrus,White Matter,*
+254,46,-47,-17,-1,White,Uncertain,Right-Fusiform (37),Right Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+255,47,-30,49,1,Cyan,Sensory/somatomotor Hand,Right-PrimSensory (1),Right Cerebrum,Parietal Lobe,Postcentral Gyrus,*,*
+256,22,-65,48,12,Green,Dorsal attention,Right-VisMotor (7),Right Cerebrum,Parietal Lobe,Superior Parietal Lobule,Gray Matter,Brodmann area 7
+257,46,-59,4,12,Green,Dorsal attention,Right-Fusiform (37),Right Cerebrum,Temporal Lobe,Middle Temporal Gyrus,White Matter,*
+258,25,-58,60,12,Green,Dorsal attention,Right-VisMotor (7),Right Cerebrum,Parietal Lobe,Sub-Gyral,White Matter,*
+259,-33,-46,47,12,Green,Dorsal attention,Left-VisMotor (7),Left Cerebrum,Parietal Lobe,Sub-Gyral,White Matter,*
+260,-27,-71,37,12,Green,Dorsal attention,Left-AngGyrus (39),Left Cerebrum,Parietal Lobe,Precuneus,White Matter,*
+261,-32,-1,54,12,Green,Dorsal attention,Left-PreMot+SuppMot (6),Left Cerebrum,Frontal Lobe,Middle Frontal Gyrus,Gray Matter,Brodmann area 6
+262,-42,-60,-9,12,Green,Dorsal attention,Left-Fusiform (37),Left Cerebrum,Temporal Lobe,Sub-Gyral,White Matter,*
+263,-17,-59,64,12,Green,Dorsal attention,Left-VisMotor (7),Left Cerebrum,Parietal Lobe,Precuneus,Gray Matter,Brodmann area 7
+264,29,-5,54,12,Green,Dorsal attention,Right-PreMot+SuppMot (6),Right Cerebrum,Frontal Lobe,Middle Frontal Gyrus,White Matter,*
+265,-24,-4,-20,10,Brown,Subcortical,Left-Amygdala,Left Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Amygdala
+266,24,-2,-20,10,Brown,Subcortical,Right-Amygdala,Right Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Amygdala
+267,28,-12,-20,6,Gray,Memory retrieval?,Right-Hippocampus,Right Cerebrum,Limbic Lobe,Parahippocampal Gyrus,White Matter,*
+268,30,-24,-12,6,Gray,Memory retrieval?,Right-Hippocampus,Right Cerebrum,Sub-lobar,Extra-Nuclear,White Matter,*
+269,30,-39,-3,6,Gray,Memory retrieval?,Right-Hippocampus,Right Cerebrum,Temporal Lobe,Sub-Gyral,Gray Matter,Hippocampus
+270,-29,-12,-22,6,Gray,Memory retrieval?,Left-Hippocampus,Left Cerebrum,Limbic Lobe,Parahippocampal Gyrus,Gray Matter,Hippocampus
+271,-30,-24,-12,6,Gray,Memory retrieval?,Left-Hippocampus,Left Cerebrum,Sub-lobar,Extra-Nuclear,White Matter,*
+272,-29,-38,-4,6,Gray,Memory retrieval?,Left-Hippocampus,Left Cerebrum,Temporal Lobe,Sub-Gyral,Gray Matter,Hippocampus

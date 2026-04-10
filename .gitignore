@@ -1,0 +1,9 @@
+*.pt
+*.pth
+*.npy
+*.pyc
+*.txt
+madc_complete.csv
+conn.md
+scores.csv
+adni.csv
